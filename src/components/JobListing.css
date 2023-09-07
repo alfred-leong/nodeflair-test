@@ -1,0 +1,162 @@
+/* src/components/JobListing.css */
+.container {
+    display: flex;
+}
+.job-list-container {
+    margin-left: 10%;
+    margin-top: 5%;
+    flex: 1;
+  }
+  
+  .job {
+    width: 400px; /* Fixed width for job listing cards */
+    height: 140px; /* Fixed height for job listing cards */
+    border: 1px solid #ccc;
+    margin-bottom: 16px;
+    border-radius: 10px; /* Rounded edges for the card */
+    padding: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .selected {
+    border-color: green; /* Change border color to green when selected */
+    border-width: 2px;
+  }
+  
+  .job-header {
+    display: flex;
+  }
+  
+  .company-logo {
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 10%; /* Rounded edges for the logo */
+  }
+
+  .company-info {
+    margin-left: 18px;
+  }
+  
+  .company-name {
+    text-overflow: ellipsis; /* Ellipsize long company names */
+  }
+  
+  .company-ratings {
+    margin-left: 10px;
+  }
+  
+  .job-category {
+    font-size: 14px;
+    height: 18px;
+    color: green; /* Green color for the job category */
+    padding: 4px 8px;
+    margin: 4px;
+    background-color: #E2F6EA;
+    border-radius: 4px; /* Rounded edges for tech stack items */
+    margin-left: auto
+  }
+  
+  .divider {
+    margin: 10px 0;
+    border: 0.5px solid #ccc; /* Horizontal line separator */
+  }
+  
+  .job-details {
+    overflow: hidden;
+    width: 240px;
+    margin-left: 68px;
+    font-size: 14px;
+  }
+  
+  .job-title {
+    width: 240px;
+    font-weight: bold;
+    font-size: 16px;
+    display: -webkit-box;
+    overflow: hidden;
+    white-space: initial;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+  
+  .job-updated-time {
+    color: #888;
+  }
+
+  .job-location {
+    margin-left: 10px;
+    color: #888;
+  }
+
+  .location-icon {
+    overflow: visible;
+    box-sizing: content-box;
+    height: 1em;
+    margin-right: 4px;
+  }
+  
+  .job-salary {
+    font-weight: bold;
+    line-height: 1.5em;
+  }
+
+  .est-container {
+    padding: 2px 4px;
+    margin: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px; /* Rounded edges for tech stack items */
+    background-color: #f1f1f1;
+    font-size: 12px;
+    font-weight: normal;
+  }
+  
+  .tech-stack {
+    width: 100%;
+    white-space: nowrap; /* Prevent tech stack from wrapping */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Add ellipsis for overflowed tech stack */
+    min-height: 40px;
+  }
+  
+  .tech-stack-list {
+    display: flex;
+    flex-wrap: nowrap;
+    max-height: 100%; /* Ensure the tech stack list respects the card's height */
+  }
+  
+  .tech-stack-item {
+    padding: 4px 8px;
+    margin: 0 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px; /* Rounded edges for tech stack items */
+    background-color: #f1f1f1;
+    color: #838383;
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+.selected-job-title-container {
+    flex-basis: 50%;
+    margin-top: 5%;
+    margin-right: 5%;
+    padding: 16px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f0f0f0; /* Background color for the selected job title container */
+  }
+  
+  .selected-job-title-text {
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  
+  /* Media query for mobile view */
+  @media (max-width: 768px) {
+    .job-list-container {
+      width: 100%;
+      /* Add styles to hide the other content */
+    }
+  }
+  
